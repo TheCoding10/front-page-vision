@@ -1,3 +1,4 @@
+import React from "react";
 import SermonCard from "./SermonCard";
 import sermon1 from "@/assets/sermon-1.jpg";
 import sermon2 from "@/assets/sermon-2.jpg";
