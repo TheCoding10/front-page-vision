@@ -23,6 +23,10 @@ const Hero = () => {
         <Button 
           size="lg"
           className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-base px-8 py-6 rounded-sm"
+          onClick={() => {
+            const sermonsSection = document.querySelector('section.bg-background');
+            sermonsSection?.scrollIntoView({ behavior: 'smooth' });
+          }}
         >
           Meet Jesus
         </Button>
