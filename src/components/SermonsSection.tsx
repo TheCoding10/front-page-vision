@@ -1,42 +1,76 @@
 import React from "react";
-import SermonCard from "./SermonCard";
-import sermon1 from "@/assets/sermon-1.jpg";
-import sermon2 from "@/assets/sermon-2.jpg";
+import meetCoffee from "@/assets/meet-us-coffee.jpg";
+import smallGroup from "@/assets/small-group.jpg";
+import readScripture from "@/assets/read-scripture.jpg";
+import instagram from "@/assets/instagram.jpg";
+import serveCommunity from "@/assets/serve-community.jpg";
+import worshipMusic from "@/assets/worship-music.jpg";
 
 const SermonsSection = () => {
-  const sermons = [
+  const cards = [
     {
       id: 1,
-      title: "the pressure point",
-      image: sermon1,
+      title: "MEET US OVER COFFEE",
+      image: meetCoffee,
+      link: "#coffee",
     },
     {
       id: 2,
-      title: "Hidden BENEFITS",
-      image: sermon2,
+      title: "JOIN A SMALL GROUP",
+      image: smallGroup,
+      link: "#small-group",
+    },
+    {
+      id: 3,
+      title: "READ SCRIPTURE WITH US",
+      image: readScripture,
+      link: "#scripture",
+    },
+    {
+      id: 4,
+      title: "SEE WHAT WE'RE UP TO ON INSTAGRAM",
+      image: instagram,
+      link: "#instagram",
+    },
+    {
+      id: 5,
+      title: "SEE HOW WE SERVE OUR COMMUNITY",
+      image: serveCommunity,
+      link: "#community",
+    },
+    {
+      id: 6,
+      title: "SONGS FOR YOUR QUIET TIME",
+      image: worshipMusic,
+      link: "#worship",
     },
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
-        <div className="mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-            LATEST SERMONS
-          </h2>
-          <p className="text-muted-foreground">
-            Tell us in the comments<br />
-            how the sermon impacted you
-          </p>
-        </div>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-foreground mb-16">
+          WALKING ALONGSIDE YOU IN THE PURSUIT OF HOLINESS
+        </h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {sermons.map((sermon) => (
-            <SermonCard 
-              key={sermon.id}
-              title={sermon.title}
-              image={sermon.image}
-            />
+          {cards.map((card) => (
+            <a
+              key={card.id}
+              href={card.link}
+              className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 aspect-[4/3]"
+            >
+              <img 
+                src={card.image} 
+                alt={card.title}
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-center justify-center">
+                <h3 className="text-white text-xl md:text-2xl font-bold text-center px-6 drop-shadow-lg">
+                  {card.title}
+                </h3>
+              </div>
+            </a>
           ))}
         </div>
       </div>
