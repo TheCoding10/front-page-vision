@@ -17,11 +17,19 @@ const menuItems = [
   { label: "GET THE APP", path: "/get-the-app" },
 ];
 
-const Header = () => {
+interface HeaderProps {
+  variant?: "transparent" | "solid";
+}
+
+const Header = ({ variant = "transparent" }: HeaderProps) => {
   const [open, setOpen] = useState(false);
 
+  const headerClasses = variant === "solid" 
+    ? "bg-[#2C2C2C] border-b border-border/10" 
+    : "absolute top-0 left-0 right-0";
+
   return (
-    <header className="absolute top-0 left-0 right-0 z-50 p-6">
+    <header className={`z-50 p-6 ${headerClasses}`}>
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center gap-3">
           <img 
