@@ -1,5 +1,5 @@
 import React from "react";
-import { Instagram } from "lucide-react";
+import { Menu } from "lucide-react";
 import heartbeatLogo from "@/assets/heartbeat-logo.png";
 
 const Header = () => {
@@ -19,15 +19,12 @@ const Header = () => {
         </div>
         
         <nav className="flex items-center gap-6">
-          <a 
-            href="https://instagram.com" 
-            target="_blank" 
-            rel="noopener noreferrer"
+          <button 
             className="text-primary-foreground hover:text-accent transition-colors"
-            aria-label="Instagram"
+            aria-label="Open menu"
           >
-            <Instagram className="h-5 w-5" />
-          </a>
+            <Menu className="h-6 w-6" />
+          </button>
         </nav>
       </div>
     </header>
