@@ -68,13 +68,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-white mb-4">Stay Connected</h3>
             <div className="space-y-2">
               <Button variant="link" className="text-gray-300 hover:text-white p-0 h-auto block" asChild>
-                <a href="#">Bible App</a>
-              </Button>
-              <Button variant="link" className="text-gray-300 hover:text-white p-0 h-auto block" asChild>
                 <a href="#">Connection Card</a>
-              </Button>
-              <Button variant="link" className="text-gray-300 hover:text-white p-0 h-auto block" asChild>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
               </Button>
               <Button variant="link" className="text-gray-300 hover:text-white p-0 h-auto block" asChild>
                 <a href="#">Get The App</a>
@@ -84,6 +78,12 @@ const Footer = () => {
               </Button>
               <Button variant="link" className="text-gray-300 hover:text-white p-0 h-auto block" asChild>
                 <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">Youtube</a>
+              </Button>
+              <Button variant="link" className="text-gray-300 hover:text-white p-0 h-auto block" asChild>
+                <a href="https://www.youversion.com" target="_blank" rel="noopener noreferrer">YouVersion</a>
+              </Button>
+              <Button variant="link" className="text-gray-300 hover:text-white p-0 h-auto block" asChild>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
               </Button>
             </div>
           </div>
