@@ -19,13 +19,6 @@ const Footer = () => {
         </svg>
       </div>
 
-      {/* Banner */}
-      <div className="relative pt-16 pb-8 text-center bg-[hsl(20_20%_20%)]">
-        <p className="text-sm text-primary-foreground">
-          Accepted Jesus? We're here for you.
-        </p>
-      </div>
-
       {/* Main footer content */}
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
