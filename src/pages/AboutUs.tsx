@@ -120,6 +120,27 @@ const AboutUs = () => {
         </div>
       </section>
 
+      {/* Through This Vision Section */}
+      <section className="bg-[#E5DDD5] py-16">
+        <div className="container mx-auto px-6">
+          <h2 className="text-5xl font-normal mb-12">
+            THROUGH THIS VISION
+          </h2>
+          
+          <div className="w-full max-w-5xl">
+            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/59XdKAF5DdA"
+                title="Through This Vision - Build Different 2025"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );
