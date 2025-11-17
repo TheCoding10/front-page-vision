@@ -5,11 +5,6 @@ import { Button } from "@/components/ui/button";
 import partnerHero from "@/assets/partner-hero.jpg";
 
 const Partner = () => {
-  const handleGiveToday = () => {
-    // Add your giving/donation logic here
-    console.log("Give Today clicked");
-  };
-
   return (
     <div className="min-h-screen">
       <Header variant="transparent" />
@@ -41,10 +36,16 @@ const Partner = () => {
           </p>
           
           <Button
-            onClick={handleGiveToday}
+            asChild
             className="bg-white text-foreground hover:bg-white/90 text-lg px-12 py-6 h-auto font-semibold"
           >
-            GIVE TODAY
+            <a 
+              href="https://pushpay.com/g/gvmincranston?campusId=&clickOrigin=&itemId="
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GIVE TODAY
+            </a>
           </Button>
         </div>
       </section>
