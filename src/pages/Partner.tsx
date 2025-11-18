@@ -86,6 +86,39 @@ const Partner = () => {
               </p>
             </div>
           </div>
+          
+          {/* Programs Section */}
+          <div className="mt-20 max-w-6xl mx-auto">
+            <p className="text-lg text-foreground mb-12 text-center leading-relaxed">
+              Thanks to your donations, we've been able to be the hands and feet of Jesus and meet people in their need through
+            </p>
+            
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Our Pantry Program */}
+              <div className="space-y-3">
+                <h4 className="text-xl font-bold text-foreground">
+                  OUR PANTRY PROGRAM
+                </h4>
+                <p className="text-foreground">Placeholder</p>
+              </div>
+              
+              {/* Bringing a Meal */}
+              <div className="space-y-3">
+                <h4 className="text-xl font-bold text-foreground">
+                  BRINGING A MEAL
+                </h4>
+                <p className="text-foreground">Placeholder</p>
+              </div>
+              
+              {/* Evangelism */}
+              <div className="space-y-3">
+                <h4 className="text-xl font-bold text-foreground">
+                  EVANGELISM
+                </h4>
+                <p className="text-foreground">Placeholder</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
