@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import partnerHero from "@/assets/partner-hero.jpg";
+import underTheTarpVideo from "@/assets/under-the-tarp.mp4";
 
 const Partner = () => {
   return (
@@ -47,6 +48,44 @@ const Partner = () => {
               GIVE TODAY
             </a>
           </Button>
+        </div>
+      </section>
+
+      {/* How Your Giving Is Reaching Others Section */}
+      <section className="py-20 bg-[#E8E3DD]">
+        <div className="container mx-auto px-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-16 text-center">
+            HOW YOUR GIVING IS REACHING OTHERS
+          </h2>
+          
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+            {/* Video Section */}
+            <div className="relative aspect-[9/16] max-h-[700px] mx-auto w-full max-w-[400px]">
+              <video
+                src={underTheTarpVideo}
+                controls
+                className="w-full h-full object-cover rounded-lg shadow-lg"
+                poster=""
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            
+            {/* Text Content */}
+            <div className="space-y-6">
+              <h3 className="text-4xl md:text-5xl font-bold text-foreground">
+                UNDER THE TARP
+              </h3>
+              
+              <p className="text-lg text-foreground leading-relaxed">
+                Think carnival meets community care — that's <strong>Under the Tarp</strong>. Every year, we bring the fun (games, food, face painting) and team up with community partners, first responders, and local businesses to deliver what people actually need – backpacks, books, Narcan, free haircuts and more – all in one place.
+              </p>
+              
+              <p className="text-lg text-foreground leading-relaxed">
+                It's part block party, part resource hub, and all about showing up with Jesus' love in action.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
