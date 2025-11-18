@@ -37,54 +37,54 @@ const Footer = () => {
           {/* Contact Us */}
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Contact Us</h3>
-            <div className="space-y-2">
-              <Button variant="link" className="text-gray-300 hover:text-white p-0 h-auto" asChild>
-                <a href="tel:">Phone</a>
-              </Button>
-              <Button variant="link" className="text-gray-300 hover:text-white p-0 h-auto block" asChild>
-                <a href="mailto:">Email</a>
-              </Button>
+            <div className="space-y-2 flex flex-col items-start">
+              <a href="tel:+14015551234" className="text-gray-300 hover:text-white transition-colors">
+                Phone
+              </a>
+              <a href="mailto:info@godsvoiceministries.com" className="text-gray-300 hover:text-white transition-colors">
+                Email
+              </a>
             </div>
           </div>
 
           {/* Partner With Us */}
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Partner With Us</h3>
-            <div className="space-y-2">
-              <Button variant="link" className="text-gray-300 hover:text-white p-0 h-auto block" asChild>
-                <a href="#">CCB Login</a>
-              </Button>
-              <Button variant="link" className="text-gray-300 hover:text-white p-0 h-auto block" asChild>
-                <a href="#">Give</a>
-              </Button>
-              <Button variant="link" className="text-gray-300 hover:text-white p-0 h-auto block" asChild>
-                <a href="#">Invite Our Team</a>
-              </Button>
+            <div className="space-y-2 flex flex-col items-start">
+              <a href="https://pushpay.com/g/gvmincranston?campusId=&clickOrigin=&itemId=" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+                Give
+              </a>
+              <a href="mailto:info@godsvoiceministries.com?subject=Team%20Invitation" className="text-gray-300 hover:text-white transition-colors">
+                Invite Our Team
+              </a>
+              <a href="https://gvmincranston.ccbchurch.com/login.php" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+                CCB Login
+              </a>
             </div>
           </div>
 
           {/* Stay Connected */}
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Stay Connected</h3>
-            <div className="space-y-2">
-              <Button variant="link" className="text-gray-300 hover:text-white p-0 h-auto block" asChild>
-                <a href="#">Connection Card</a>
-              </Button>
-              <Button variant="link" className="text-gray-300 hover:text-white p-0 h-auto block" asChild>
-                <a href="#">Get The App</a>
-              </Button>
-              <Button variant="link" className="text-gray-300 hover:text-white p-0 h-auto block" asChild>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-              </Button>
-              <Button variant="link" className="text-gray-300 hover:text-white p-0 h-auto block" asChild>
-                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">Youtube</a>
-              </Button>
-              <Button variant="link" className="text-gray-300 hover:text-white p-0 h-auto block" asChild>
-                <a href="https://www.youversion.com" target="_blank" rel="noopener noreferrer">YouVersion</a>
-              </Button>
-              <Button variant="link" className="text-gray-300 hover:text-white p-0 h-auto block" asChild>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-              </Button>
+            <div className="space-y-2 flex flex-col items-start">
+              <a href="https://gvmincranston.ccbchurch.com/goto/forms/43/responses/new" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+                Connection Card
+              </a>
+              <a href="/get-the-app" className="text-gray-300 hover:text-white transition-colors">
+                Get The App
+              </a>
+              <a href="https://instagram.com/godsvoiceministries" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+                Instagram
+              </a>
+              <a href="https://youtube.com/@godsvoiceministries" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+                Youtube
+              </a>
+              <a href="https://www.bible.com/users/godsvoiceministries" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+                YouVersion
+              </a>
+              <a href="https://facebook.com/godsvoiceministries" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+                Facebook
+              </a>
             </div>
           </div>
         </div>
