@@ -24,10 +24,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Left section */}
           <div>
-            <h2 className="text-2xl font-bold text-white mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
               HEAR HIS VOICE<br />AND RESPOND.
             </h2>
-            <div className="text-sm text-gray-300 space-y-1">
+            <div className="text-base text-white space-y-1">
               <p>Sundays @ 11am</p>
               <p>1370 Plainfield Street</p>
               <p>Cranston, RI 02920</p>
@@ -36,12 +36,12 @@ const Footer = () => {
 
           {/* Contact Us */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Contact Us</h3>
+            <h3 className="text-xl font-bold text-white mb-4">Contact Us</h3>
             <div className="space-y-2 flex flex-col items-start">
-              <a href="tel:+14015551234" className="text-gray-300 hover:text-white transition-colors">
+              <a href="tel:+14015551234" className="text-white hover:text-gray-300 transition-colors">
                 Phone
               </a>
-              <a href="mailto:info@godsvoiceministries.com" className="text-gray-300 hover:text-white transition-colors">
+              <a href="mailto:info@godsvoiceministries.com" className="text-white hover:text-gray-300 transition-colors">
                 Email
               </a>
             </div>
@@ -49,15 +49,15 @@ const Footer = () => {
 
           {/* Partner With Us */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Partner With Us</h3>
+            <h3 className="text-xl font-bold text-white mb-4">Partner With Us</h3>
             <div className="space-y-2 flex flex-col items-start">
-              <a href="https://pushpay.com/g/gvmincranston?campusId=&clickOrigin=&itemId=" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://pushpay.com/g/gvmincranston?campusId=&clickOrigin=&itemId=" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
                 Give
               </a>
-              <a href="mailto:info@godsvoiceministries.com?subject=Team%20Invitation" className="text-gray-300 hover:text-white transition-colors">
+              <a href="mailto:info@godsvoiceministries.com?subject=Team%20Invitation" className="text-white hover:text-gray-300 transition-colors">
                 Invite Our Team
               </a>
-              <a href="https://gvmincranston.ccbchurch.com/login.php" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://gvmincranston.ccbchurch.com/login.php" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
                 CCB Login
               </a>
             </div>
@@ -65,24 +65,24 @@ const Footer = () => {
 
           {/* Stay Connected */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Stay Connected</h3>
+            <h3 className="text-xl font-bold text-white mb-4">Stay Connected</h3>
             <div className="space-y-2 flex flex-col items-start">
-              <a href="https://gvmincranston.ccbchurch.com/goto/forms/43/responses/new" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://gvmincranston.ccbchurch.com/goto/forms/43/responses/new" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
                 Connection Card
               </a>
-              <a href="/get-the-app" className="text-gray-300 hover:text-white transition-colors">
+              <a href="/get-the-app" className="text-white hover:text-gray-300 transition-colors">
                 Get The App
               </a>
-              <a href="https://instagram.com/godsvoiceministries" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://instagram.com/godsvoiceministries" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
                 Instagram
               </a>
-              <a href="https://youtube.com/@godsvoiceministries" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://youtube.com/@godsvoiceministries" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
                 Youtube
               </a>
-              <a href="https://www.bible.com/users/godsvoiceministries" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://www.bible.com/users/godsvoiceministries" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
                 YouVersion
               </a>
-              <a href="https://facebook.com/godsvoiceministries" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://facebook.com/godsvoiceministries" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-colors">
                 Facebook
               </a>
             </div>
