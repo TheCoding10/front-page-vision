@@ -4,6 +4,9 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import partnerHero from "@/assets/partner-hero.jpg";
 import underTheTarpVideo from "@/assets/under-the-tarp.mp4";
+import partnerKitchen from "@/assets/partner-kitchen.jpg";
+import partnerMeal from "@/assets/partner-meal.jpg";
+import partnerOutreach from "@/assets/partner-outreach.jpg";
 
 const Partner = () => {
   return (
@@ -118,6 +121,53 @@ const Partner = () => {
                 <p className="text-foreground">Placeholder</p>
               </div>
             </div>
+          </div>
+          
+          {/* Our Partners Section */}
+          <div className="mt-20">
+            {/* Three Images */}
+            <div className="grid md:grid-cols-3 gap-0 mb-12">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={partnerKitchen} 
+                  alt="Volunteers in kitchen" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={partnerMeal} 
+                  alt="Food being served" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={partnerOutreach} 
+                  alt="Community outreach" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            
+            {/* Partners Heading */}
+            <h3 className="text-4xl font-bold text-foreground mb-12">
+              OUR PARTNERS
+            </h3>
+            
+            {/* Partner Logos Grid - Placeholder */}
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-items-center mb-12 max-w-5xl mx-auto">
+              {[...Array(18)].map((_, i) => (
+                <div key={i} className="w-24 h-24 bg-muted rounded-lg flex items-center justify-center">
+                  <span className="text-xs text-muted-foreground text-center px-2">Partner {i + 1}</span>
+                </div>
+              ))}
+            </div>
+            
+            {/* Footer Text */}
+            <p className="text-center text-foreground text-lg">
+              Interested in being a partner or volunteering? Connect with our team here.
+            </p>
           </div>
         </div>
       </section>
