@@ -20,14 +20,14 @@ const Footer = () => {
       </div>
 
       {/* Main footer content */}
-      <div className="container mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div className="container mx-auto px-6 py-20 max-w-7xl">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-16">
           {/* Left section */}
-          <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 leading-tight">
+          <div className="min-w-0">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 leading-tight break-words">
               HEAR HIS VOICE<br />AND RESPOND.
             </h2>
-            <div className="text-base text-white space-y-1">
+            <div className="text-base text-white space-y-2">
               <p>Sundays @ 11am</p>
               <p>1370 Plainfield Street</p>
               <p>Cranston, RI 02920</p>
@@ -35,9 +35,9 @@ const Footer = () => {
           </div>
 
           {/* Contact Us */}
-          <div>
-            <h3 className="text-xl font-bold text-white mb-6">Contact Us</h3>
-            <div className="space-y-3 flex flex-col items-start text-base">
+          <div className="min-w-0">
+            <h3 className="text-xl font-bold text-white mb-8 break-words">Contact Us</h3>
+            <div className="space-y-4 flex flex-col items-start text-base">
               <a href="tel:+14015551234" className="text-white hover:opacity-70 transition-opacity">
                 Phone
               </a>
@@ -48,9 +48,9 @@ const Footer = () => {
           </div>
 
           {/* Partner With Us */}
-          <div>
-            <h3 className="text-xl font-bold text-white mb-6">Partner With Us</h3>
-            <div className="space-y-3 flex flex-col items-start text-base">
+          <div className="min-w-0">
+            <h3 className="text-xl font-bold text-white mb-8 break-words">Partner With Us</h3>
+            <div className="space-y-4 flex flex-col items-start text-base">
               <a href="https://pushpay.com/g/gvmincranston?campusId=&clickOrigin=&itemId=" target="_blank" rel="noopener noreferrer" className="text-white hover:opacity-70 transition-opacity">
                 Give
               </a>
@@ -64,9 +64,9 @@ const Footer = () => {
           </div>
 
           {/* Stay Connected */}
-          <div>
-            <h3 className="text-xl font-bold text-white mb-6">Stay Connected</h3>
-            <div className="space-y-3 flex flex-col items-start text-base">
+          <div className="min-w-0">
+            <h3 className="text-xl font-bold text-white mb-8 break-words">Stay Connected</h3>
+            <div className="space-y-4 flex flex-col items-start text-base">
               <a href="https://gvmincranston.ccbchurch.com/goto/forms/43/responses/new" target="_blank" rel="noopener noreferrer" className="text-white hover:opacity-70 transition-opacity">
                 Connection Card
               </a>
