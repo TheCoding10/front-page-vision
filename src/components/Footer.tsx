@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="relative bg-[#3a3a3a] text-white">
       {/* Wavy border at top */}
-      <div className="absolute top-0 left-0 right-0 h-24 bg-background">
+      <div className="absolute top-0 left-0 right-0 h-24 bg-background z-0">
         <svg
           className="absolute bottom-0 w-full h-24"
           viewBox="0 0 1440 100"
@@ -20,7 +20,7 @@ const Footer = () => {
       </div>
 
       {/* Main footer content */}
-      <div className="container mx-auto px-6 pt-32 pb-20 max-w-7xl">
+      <div className="container mx-auto px-6 pt-40 pb-20 max-w-7xl relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-16">
           {/* Left section */}
           <div className="min-w-0">
