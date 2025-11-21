@@ -20,7 +20,7 @@ const Footer = () => {
       </div>
 
       {/* Main footer content */}
-      <div className="container mx-auto px-6 py-20 max-w-7xl">
+      <div className="container mx-auto px-6 pt-32 pb-20 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-16">
           {/* Left section */}
           <div className="min-w-0">
