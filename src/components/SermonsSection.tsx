@@ -30,7 +30,8 @@ const SermonsSection = () => {
       id: 4,
       title: "SEE WHAT WE'RE UP TO ON INSTAGRAM",
       image: instagram,
-      link: "#instagram",
+      link: "https://www.instagram.com/godsvoiceministries/",
+      external: true,
     },
     {
       id: 5,
@@ -58,6 +59,8 @@ const SermonsSection = () => {
             <a
               key={card.id}
               href={card.link}
+              target={card.external ? "_blank" : undefined}
+              rel={card.external ? "noopener noreferrer" : undefined}
               className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 aspect-[4/3]"
             >
               <img 
