@@ -12,7 +12,8 @@ const SermonsSection = () => {
       id: 1,
       title: "MEET US OVER COFFEE",
       image: meetCoffee,
-      link: "#coffee",
+      link: "https://godsvoiceministries.ccbchurch.com/goto/forms/8/responses/new",
+      external: true,
     },
     {
       id: 2,
