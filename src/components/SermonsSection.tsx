@@ -39,7 +39,7 @@ const SermonsSection = () => {
       id: 5,
       title: "SEE HOW WE SERVE OUR COMMUNITY",
       image: serveCommunity,
-      link: "#community",
+      link: "/partner",
     },
     {
       id: 6,
