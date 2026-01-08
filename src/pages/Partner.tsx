@@ -102,7 +102,7 @@ const Partner = () => {
                 <h4 className="text-xl font-bold text-foreground">
                   OUR PANTRY PROGRAM
                 </h4>
-                <p className="text-foreground">Placeholder</p>
+                <p className="text-foreground">Through local and church donations, we are able to lighten the load of our community with groceries, personal care products and more.</p>
               </div>
               
               {/* Bringing a Meal */}
@@ -110,7 +110,7 @@ const Partner = () => {
                 <h4 className="text-xl font-bold text-foreground">
                   BRINGING A MEAL
                 </h4>
-                <p className="text-foreground">Placeholder</p>
+                <p className="text-foreground">We partner with local organizations to bring a warm, home-cooked meal for anyone who needs it.</p>
               </div>
               
               {/* Evangelism */}
@@ -118,7 +118,7 @@ const Partner = () => {
                 <h4 className="text-xl font-bold text-foreground">
                   EVANGELISM
                 </h4>
-                <p className="text-foreground">Placeholder</p>
+                <p className="text-foreground">Like Peter in Acts 3:6, in everything that we do and anyway that we can, we will share the love, freedom and salvation that was freely given to us.</p>
               </div>
             </div>
           </div>
