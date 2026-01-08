@@ -24,7 +24,8 @@ const SermonsSection = () => {
       id: 3,
       title: "READ SCRIPTURE WITH US",
       image: readScripture,
-      link: "#scripture",
+      link: "https://www.bible.com/organizations/8a527f1b-08ce-4cea-828a-5c1004d4d77e?utm_source=yvapp&utm_medium=share&utm_content=partner-page",
+      external: true,
     },
     {
       id: 4,
