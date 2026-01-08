@@ -45,7 +45,8 @@ const SermonsSection = () => {
       id: 6,
       title: "SONGS FOR YOUR QUIET TIME",
       image: worshipMusic,
-      link: "#worship",
+      link: "https://open.spotify.com/playlist/5KoNmEXL2H0s3asbf5yXmC",
+      external: true,
     },
   ];
 
