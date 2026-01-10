@@ -18,6 +18,15 @@ import franksRentalsLogo from "@/assets/partners/franks-rentals.png";
 import hisPrisonMinistryLogo from "@/assets/partners/his-prison-ministry.jpeg";
 import iggysLogo from "@/assets/partners/iggys.jpeg";
 import motherBabyLogo from "@/assets/partners/mother-baby.png";
+import mainEventBoxingLogo from "@/assets/partners/main-event-boxing.jpg";
+import miriamHospitalLogo from "@/assets/partners/miriam-hospital.png";
+import neighborhoodHealthLogo from "@/assets/partners/neighborhood-health-plan.png";
+import ninetyNineLogo from "@/assets/partners/ninety-nine-restaurant.png";
+import providenceRescueLogo from "@/assets/partners/providence-rescue-mission.png";
+import stopTheWaitLogo from "@/assets/partners/stop-the-wait.png";
+import texasRoadhouseLogo from "@/assets/partners/texas-roadhouse.jpg";
+import upperCutzLogo from "@/assets/partners/upper-cutz.png";
+import ymcaLogo from "@/assets/partners/ymca.png";
 
 const partnerLogos = [
   { src: atmedLogo, alt: "atMed" },
@@ -29,6 +38,15 @@ const partnerLogos = [
   { src: hisPrisonMinistryLogo, alt: "His Prison Ministry" },
   { src: iggysLogo, alt: "Iggy's Creamery" },
   { src: motherBabyLogo, alt: "Mother & Baby Support" },
+  { src: mainEventBoxingLogo, alt: "Main Event Boxing" },
+  { src: miriamHospitalLogo, alt: "The Miriam Hospital" },
+  { src: neighborhoodHealthLogo, alt: "Neighborhood Health Plan of Rhode Island" },
+  { src: ninetyNineLogo, alt: "99 Restaurant" },
+  { src: providenceRescueLogo, alt: "Providence Rescue Mission" },
+  { src: stopTheWaitLogo, alt: "Stop The Wait RI" },
+  { src: texasRoadhouseLogo, alt: "Texas Roadhouse" },
+  { src: upperCutzLogo, alt: "Upper Cut'z" },
+  { src: ymcaLogo, alt: "YMCA" },
 ];
 
 const Partner = () => {
