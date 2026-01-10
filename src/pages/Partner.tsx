@@ -8,6 +8,29 @@ import partnerKitchen from "@/assets/partner-kitchen.jpg";
 import partnerMeal from "@/assets/partner-meal.jpg";
 import partnerOutreach from "@/assets/partner-outreach.jpg";
 
+// Partner logos
+import atmedLogo from "@/assets/partners/atmed.png";
+import autismLearningLogo from "@/assets/partners/autism-learning-partners.png";
+import cranstonFireLogo from "@/assets/partners/cranston-fire-dept.png";
+import cranstonPoliceLogo from "@/assets/partners/cranston-police.png";
+import cwLanesLogo from "@/assets/partners/cw-lanes.jpeg";
+import franksRentalsLogo from "@/assets/partners/franks-rentals.png";
+import hisPrisonMinistryLogo from "@/assets/partners/his-prison-ministry.jpeg";
+import iggysLogo from "@/assets/partners/iggys.jpeg";
+import motherBabyLogo from "@/assets/partners/mother-baby.png";
+
+const partnerLogos = [
+  { src: atmedLogo, alt: "atMed" },
+  { src: autismLearningLogo, alt: "Autism Learning Partners" },
+  { src: cranstonFireLogo, alt: "Cranston Fire Department" },
+  { src: cranstonPoliceLogo, alt: "Cranston Police Department" },
+  { src: cwLanesLogo, alt: "CW Lanes" },
+  { src: franksRentalsLogo, alt: "Franks Rentals" },
+  { src: hisPrisonMinistryLogo, alt: "His Prison Ministry" },
+  { src: iggysLogo, alt: "Iggy's Creamery" },
+  { src: motherBabyLogo, alt: "Mother & Baby Support" },
+];
+
 const Partner = () => {
   return (
     <div className="min-h-screen">
@@ -155,11 +178,15 @@ const Partner = () => {
               OUR PARTNERS
             </h3>
             
-            {/* Partner Logos Grid - Placeholder */}
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-items-center mb-12 max-w-5xl mx-auto">
-              {[...Array(18)].map((_, i) => (
-                <div key={i} className="w-24 h-24 bg-muted rounded-lg flex items-center justify-center">
-                  <span className="text-xs text-muted-foreground text-center px-2">Partner {i + 1}</span>
+            {/* Partner Logos Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center mb-12 max-w-5xl mx-auto">
+              {partnerLogos.map((partner, i) => (
+                <div key={i} className="w-32 h-32 bg-white rounded-lg flex items-center justify-center p-4 shadow-sm">
+                  <img 
+                    src={partner.src} 
+                    alt={partner.alt} 
+                    className="max-w-full max-h-full object-contain"
+                  />
                 </div>
               ))}
             </div>
