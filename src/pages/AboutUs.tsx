@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import InteractiveTeamSection from "@/components/InteractiveTeamSection";
 import pastorsFamily from "@/assets/pastors-family.png";
-import teamPhoto from "@/assets/team-photo.jpg";
 
 const AboutUs = () => {
   return (
@@ -49,11 +49,7 @@ const AboutUs = () => {
           </h2>
           
           <div className="mb-16">
-            <img 
-              src={teamPhoto} 
-              alt="God's Voice Ministries Team" 
-              className="w-full h-auto"
-            />
+            <InteractiveTeamSection />
           </div>
 
           <h3 className="text-4xl font-normal mb-12">
