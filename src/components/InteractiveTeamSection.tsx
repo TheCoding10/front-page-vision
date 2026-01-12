@@ -9,6 +9,8 @@ interface TeamMember {
   dotPosition: { top: string; left: string };
   nameBoxPosition: { top: string; left: string };
   blurbPosition: { top: string; left: string };
+  lineToName: { height: string; direction: "up" | "down" };
+  lineToBlurb: { height: string };
 }
 
 const teamMembers: TeamMember[] = [
@@ -20,6 +22,8 @@ const teamMembers: TeamMember[] = [
     dotPosition: { top: "58%", left: "8%" },
     nameBoxPosition: { top: "18%", left: "5%" },
     blurbPosition: { top: "68%", left: "2%" },
+    lineToName: { height: "38%", direction: "up" },
+    lineToBlurb: { height: "8%" },
   },
   {
     id: 2,
@@ -29,6 +33,8 @@ const teamMembers: TeamMember[] = [
     dotPosition: { top: "78%", left: "26%" },
     nameBoxPosition: { top: "32%", left: "18%" },
     blurbPosition: { top: "88%", left: "18%" },
+    lineToName: { height: "44%", direction: "up" },
+    lineToBlurb: { height: "8%" },
   },
   {
     id: 3,
@@ -38,24 +44,30 @@ const teamMembers: TeamMember[] = [
     dotPosition: { top: "62%", left: "48%" },
     nameBoxPosition: { top: "24%", left: "40%" },
     blurbPosition: { top: "72%", left: "36%" },
+    lineToName: { height: "36%", direction: "up" },
+    lineToBlurb: { height: "8%" },
   },
   {
     id: 4,
-    name: "Ps. Adolfo Pichardo Jr., MBA",
-    role: "Spiritual Formation",
+    name: "Ps. Adolfo Pichardo Jr., M.B.A",
+    role: "Associate Pastor, Spiritual Formation",
     blurb: "Will trade sermon notes for cookies",
     dotPosition: { top: "62%", left: "72%" },
     nameBoxPosition: { top: "12%", left: "58%" },
     blurbPosition: { top: "72%", left: "62%" },
+    lineToName: { height: "48%", direction: "up" },
+    lineToBlurb: { height: "8%" },
   },
   {
     id: 5,
-    name: "Ps. Christopher Graham, M.A., M.Ed",
+    name: "Christopher Graham, M.A., M.Ed",
     role: "Youth / Young Adults",
     blurb: "Ask me for a pic of my pup and the answer is always yes",
     dotPosition: { top: "50%", left: "92%" },
     nameBoxPosition: { top: "18%", left: "78%" },
     blurbPosition: { top: "60%", left: "72%" },
+    lineToName: { height: "30%", direction: "up" },
+    lineToBlurb: { height: "8%" },
   },
 ];
 
@@ -115,7 +127,25 @@ const InteractiveTeamSection: React.FC = () => {
       {/* Interactive Dots and Info Boxes */}
       {teamMembers.map((member) => (
         <React.Fragment key={member.id}>
-          {/* Name Box - Always visible when active */}
+          {/* Connector Line to Name Box (going up) */}
+          <div
+            className={`absolute z-10 pointer-events-none transition-all duration-300 ease-out ${
+              activeMember === member.id
+                ? "opacity-100 scale-y-100"
+                : "opacity-0 scale-y-0"
+            }`}
+            style={{
+              bottom: `calc(100% - ${member.dotPosition.top})`,
+              left: member.dotPosition.left,
+              width: "2px",
+              height: member.lineToName.height,
+              transformOrigin: "bottom center",
+            }}
+          >
+            <div className="w-full h-full bg-white rounded-full" />
+          </div>
+
+          {/* Name Box */}
           <div
             className={`absolute z-20 transition-all duration-300 ease-out pointer-events-none ${
               activeMember === member.id
@@ -155,6 +185,25 @@ const InteractiveTeamSection: React.FC = () => {
               Click to learn about {member.name}, {member.role}
             </span>
           </button>
+
+          {/* Connector Line to Blurb Box (going down) */}
+          <div
+            className={`absolute z-10 pointer-events-none transition-all duration-300 ease-out ${
+              activeMember === member.id
+                ? "opacity-100 scale-y-100"
+                : "opacity-0 scale-y-0"
+            }`}
+            style={{
+              top: member.dotPosition.top,
+              left: member.dotPosition.left,
+              width: "2px",
+              height: member.lineToBlurb.height,
+              transformOrigin: "top center",
+              transform: "translateX(-50%)",
+            }}
+          >
+            <div className="w-full h-full bg-white rounded-full" />
+          </div>
 
           {/* Blurb Box */}
           <div
