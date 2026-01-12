@@ -9,12 +9,12 @@ import {
 } from "@/components/ui/sheet";
 
 const menuItems = [
-  { label: "HOME", path: "/" },
-  { label: "WATCH ONLINE", path: "/watch-online" },
-  { label: "PARTNER", path: "/partner" },
-  { label: "ABOUT US", path: "/about-us" },
-  { label: "VISIT US", path: "/visit-us" },
-  { label: "GET THE APP", path: "/get-the-app" },
+  { label: "HOME", path: "/", external: false },
+  { label: "WATCH ONLINE", path: "https://www.youtube.com/@godsvoiceministries0114", external: true },
+  { label: "PARTNER", path: "/partner", external: false },
+  { label: "ABOUT US", path: "/about-us", external: false },
+  { label: "VISIT US", path: "/visit-us", external: false },
+  { label: "GET THE APP", path: "/get-the-app", external: false },
 ];
 
 interface HeaderProps {
@@ -55,14 +55,27 @@ const Header = ({ variant = "transparent" }: HeaderProps) => {
           <SheetContent side="right" className="w-[300px] bg-muted">
             <nav className="flex flex-col gap-6 mt-12">
               {menuItems.map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  onClick={() => setOpen(false)}
-                  className="text-2xl font-semibold text-foreground hover:text-primary transition-colors"
-                >
-                  {item.label}
-                </Link>
+                item.external ? (
+                  <a
+                    key={item.path}
+                    href={item.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setOpen(false)}
+                    className="text-2xl font-semibold text-foreground hover:text-primary transition-colors"
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    onClick={() => setOpen(false)}
+                    className="text-2xl font-semibold text-foreground hover:text-primary transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                )
               ))}
             </nav>
           </SheetContent>
