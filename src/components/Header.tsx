@@ -13,7 +13,7 @@ const menuItems = [
   { label: "WATCH ONLINE", path: "https://www.youtube.com/@godsvoiceministries0114", external: true },
   { label: "PARTNER", path: "/partner", external: false },
   { label: "ABOUT US", path: "/about-us", external: false },
-  { label: "VISIT US", path: "/visit-us", external: false },
+  { label: "VISIT US", path: "https://share.google/swOp6M7qJKARhMice", external: true },
   { label: "GET THE APP", path: "/get-the-app", external: false },
 ];
 
