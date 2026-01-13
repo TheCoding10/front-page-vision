@@ -42,66 +42,66 @@ const AboutUs = () => {
       </section>
 
       {/* Building Together Section */}
-      <section className="bg-white py-16">
-        <div className="container mx-auto px-6">
-          <h2 className="text-5xl font-normal mb-12">
+      <section className="bg-white py-20 md:py-28">
+        <div className="container mx-auto px-6 md:px-12 lg:px-16 max-w-[1400px]">
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-normal mb-14 md:mb-16">
             BUILDING <span className="font-bold">TOGETHER</span>
           </h2>
           
-          <div className="mb-16">
+          <div className="mb-20 md:mb-24">
             <InteractiveTeamSection />
           </div>
 
-          <h3 className="text-4xl font-normal mb-12">
+          <h3 className="text-4xl md:text-5xl font-normal mb-14 md:mb-16">
             WITH THIS CALL
           </h3>
 
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-4 gap-10 md:gap-12">
             {/* Mission */}
             <div>
-              <h4 className="text-lg font-bold mb-4 pb-2 border-b-2 border-black">
+              <h4 className="text-xl font-bold mb-5 pb-3 border-b-2 border-black">
                 MISSION
               </h4>
-              <p className="text-2xl font-bold leading-tight">
+              <p className="text-2xl md:text-3xl font-bold leading-tight">
                 EDUCATE PEOPLE TO EMBRACE AND SHARE GOD'S LOVE
               </p>
             </div>
 
             {/* Values */}
             <div>
-              <h4 className="text-lg font-bold mb-4 pb-2 border-b-2 border-black">
+              <h4 className="text-xl font-bold mb-5 pb-3 border-b-2 border-black">
                 VALUES
               </h4>
-              <p className="text-2xl font-bold leading-tight mb-2">
+              <p className="text-2xl md:text-3xl font-bold leading-tight mb-3">
                 LOVE.
               </p>
-              <p className="text-2xl font-bold leading-tight mb-2">
+              <p className="text-2xl md:text-3xl font-bold leading-tight mb-3">
                 TRUTH.
               </p>
-              <p className="text-2xl font-bold leading-tight text-[#D4AF37] mb-2">
+              <p className="text-2xl md:text-3xl font-bold leading-tight text-[#D4AF37] mb-3">
                 COMMUNITY.
               </p>
-              <p className="text-2xl font-bold leading-tight">
+              <p className="text-2xl md:text-3xl font-bold leading-tight">
                 JUSTICE.
               </p>
             </div>
 
             {/* Vision */}
             <div>
-              <h4 className="text-lg font-bold mb-4 pb-2 border-b-2 border-black">
+              <h4 className="text-xl font-bold mb-5 pb-3 border-b-2 border-black">
                 VISION
               </h4>
-              <p className="text-2xl font-bold leading-tight">
+              <p className="text-2xl md:text-3xl font-bold leading-tight">
                 TO HELP YOU BUILD AN UNWAVERING RELATIONSHIP WITH GOD, AND ONE ANOTHER.
               </p>
             </div>
 
             {/* Beliefs */}
             <div>
-              <h4 className="text-lg font-bold mb-4 pb-2 border-b-2 border-black">
+              <h4 className="text-xl font-bold mb-5 pb-3 border-b-2 border-black">
                 BELIEFS
               </h4>
-              <p className="text-xl font-bold leading-tight">
+              <p className="text-xl md:text-2xl font-bold leading-relaxed">
                 TRINITY<br />
                 SALVATION<br />
                 RESURRECTION<br />
