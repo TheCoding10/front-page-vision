@@ -112,8 +112,8 @@ const InteractiveTeamSection: React.FC = () => {
   return (
     <div
       ref={containerRef}
-      className="relative w-full max-w-6xl mx-auto"
-      style={{ aspectRatio: "16/10" }}
+      className="relative w-full max-w-7xl mx-auto"
+      style={{ aspectRatio: "16/9" }}
     >
       {/* Background Image */}
       <div className="absolute inset-0 bg-[#3d4a4f] rounded-lg overflow-hidden">
