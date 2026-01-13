@@ -10,23 +10,23 @@ const AboutUs = () => {
       <Header variant="solid" />
       
       {/* Meet Our Pastors Section */}
-      <section className="container mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+      <section className="container mx-auto px-6 md:px-12 py-20 md:py-24">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div>
-            <h1 className="text-5xl font-bold mb-8">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-10">
               <span className="font-bold">MEET</span>{" "}
               <span className="font-normal">OUR PASTORS</span>
             </h1>
             
-            <p className="text-xl mb-6 leading-relaxed">
+            <p className="text-xl md:text-2xl mb-8 leading-relaxed">
               Pastors Carlos and Cynthia Ramirez are passionate about making God's truth accessible to everyone, and have a heart for educating people to embrace God's love.
             </p>
             
-            <p className="text-xl mb-6 leading-relaxed">
+            <p className="text-xl md:text-2xl mb-8 leading-relaxed">
               They're serving in ministry with their family – Jose, Jarius, and Sajhara – proving that love, truth, community, and justice aren't just Sunday values, they're everyday ones. Their mission for GVM? Welcoming you exactly as you are, creating genuine community, and loving people the way Jesus did – radically and without hesitation.
             </p>
             
-            <p className="text-xl font-semibold">
+            <p className="text-xl md:text-2xl font-semibold">
               You belong here.
             </p>
           </div>
