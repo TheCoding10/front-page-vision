@@ -96,38 +96,44 @@ const Partner = () => {
       </section>
 
       {/* How Your Giving Is Reaching Others Section */}
-      <section className="py-20 bg-[#E8E3DD]">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-16 text-center">
+      <section className="py-24 md:py-32 bg-[#E8E3DD]">
+        <div className="container mx-auto px-6 md:px-12 lg:px-16">
+          {/* Section Title */}
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-16 md:mb-20 text-center tracking-wide">
             HOW YOUR GIVING IS REACHING OTHERS
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
-            {/* Video Section */}
-            <div className="relative aspect-[9/16] max-h-[700px] mx-auto w-full max-w-[400px]">
-              <video
-                src={underTheTarpVideo}
-                controls
-                className="w-full h-full object-cover rounded-lg shadow-lg"
-                poster=""
-              >
-                Your browser does not support the video tag.
-              </video>
+          {/* Desktop Feature Layout */}
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 xl:gap-20 items-center max-w-7xl mx-auto">
+            {/* Video Section - Desktop Landscape */}
+            <div className="w-full lg:w-[55%] flex-shrink-0">
+              <div className="relative aspect-[4/5] md:aspect-[4/5] lg:aspect-[4/5] w-full overflow-hidden rounded-lg shadow-xl">
+                <video
+                  src={underTheTarpVideo}
+                  controls
+                  className="w-full h-full object-cover"
+                  poster=""
+                >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
             
-            {/* Text Content */}
-            <div className="space-y-6">
-              <h3 className="text-4xl md:text-5xl font-bold text-foreground">
+            {/* Text Content - Vertically Centered */}
+            <div className="w-full lg:w-[45%] space-y-8 lg:pl-4">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground tracking-tight">
                 UNDER THE TARP
               </h3>
               
-              <p className="text-lg text-foreground leading-relaxed">
-                Think carnival meets community care — that's <strong>Under the Tarp</strong>. Every year, we bring the fun (games, food, face painting) and team up with community partners, first responders, and local businesses to deliver what people actually need – backpacks, books, Narcan, free haircuts and more – all in one place.
-              </p>
-              
-              <p className="text-lg text-foreground leading-relaxed">
-                It's part block party, part resource hub, and all about showing up with Jesus' love in action.
-              </p>
+              <div className="space-y-6 max-w-xl">
+                <p className="text-lg md:text-xl text-foreground leading-relaxed">
+                  Think carnival meets community care — that's <strong className="font-semibold">Under the Tarp</strong>. Every year, we bring the fun (games, food, face painting) and team up with community partners, first responders, and local businesses to deliver what people actually need – backpacks, books, Narcan, free haircuts and more – all in one place.
+                </p>
+                
+                <p className="text-lg md:text-xl text-foreground leading-relaxed">
+                  It's part block party, part resource hub, and all about showing up with Jesus' love in action.
+                </p>
+              </div>
             </div>
           </div>
           
