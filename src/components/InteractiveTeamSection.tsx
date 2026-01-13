@@ -112,15 +112,16 @@ const InteractiveTeamSection: React.FC = () => {
   return (
     <div
       ref={containerRef}
-      className="relative w-full max-w-7xl mx-auto"
-      style={{ aspectRatio: "16/9" }}
+      className="relative w-full mx-auto"
+      style={{ aspectRatio: "21/10" }}
     >
       {/* Background Image */}
       <div className="absolute inset-0 bg-[#3d4a4f] rounded-lg overflow-hidden">
         <img
           src={teamPhoto}
           alt="God's Voice Ministries Leadership Team"
-          className="w-full h-full object-cover object-top"
+          className="w-full h-full object-cover object-center"
+          style={{ objectPosition: "center 25%" }}
         />
       </div>
 
