@@ -202,17 +202,33 @@ const Partner = () => {
               OUR PARTNERS
             </h3>
             
-            {/* Partner Logos Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center mb-12 max-w-5xl mx-auto">
-              {partnerLogos.map((partner, i) => (
-                <div key={i} className="w-32 h-32 bg-white rounded-lg flex items-center justify-center p-4 shadow-sm">
-                  <img 
-                    src={partner.src} 
-                    alt={partner.alt} 
-                    className="max-w-full max-h-full object-contain"
-                  />
-                </div>
-              ))}
+            {/* Partner Logos - Two Horizontal Rows */}
+            <div className="flex flex-col gap-8 md:gap-12 mb-12">
+              {/* Row 1 */}
+              <div className="flex flex-wrap md:flex-nowrap justify-center items-center gap-6 md:gap-8 lg:gap-12">
+                {partnerLogos.slice(0, 9).map((partner, i) => (
+                  <div key={i} className="flex-shrink-0 h-12 md:h-14 lg:h-16">
+                    <img 
+                      src={partner.src} 
+                      alt={partner.alt} 
+                      className="h-full w-auto object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
+              
+              {/* Row 2 */}
+              <div className="flex flex-wrap md:flex-nowrap justify-center items-center gap-6 md:gap-8 lg:gap-12">
+                {partnerLogos.slice(9).map((partner, i) => (
+                  <div key={i} className="flex-shrink-0 h-12 md:h-14 lg:h-16">
+                    <img 
+                      src={partner.src} 
+                      alt={partner.alt} 
+                      className="h-full w-auto object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
             
             {/* Footer Text */}
