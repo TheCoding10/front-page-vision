@@ -38,10 +38,18 @@ const Footer = () => {
           <div className="min-w-0">
             <h3 className="text-xl font-bold text-white mb-8 break-words">Contact Us</h3>
             <div className="space-y-4 flex flex-col items-start text-base">
-              <a href="tel:+14015551234" className="text-white hover:opacity-70 transition-opacity">
+              <a 
+                href="tel:+14014001463" 
+                className="text-white hover:opacity-70 transition-opacity"
+                aria-label="Call us at 401-400-1463"
+              >
                 Phone
               </a>
-              <a href="mailto:info@godsvoiceministries.com" className="text-white hover:opacity-70 transition-opacity">
+              <a 
+                href="mailto:connect@gvmin.org" 
+                className="text-white hover:opacity-70 transition-opacity"
+                aria-label="Email us at connect@gvmin.org"
+              >
                 Email
               </a>
             </div>
