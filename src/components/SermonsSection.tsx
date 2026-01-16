@@ -17,7 +17,7 @@ const SermonsSection = () => {
     },
     {
       id: 2,
-      title: "JOIN A SMALL GROUP",
+      title: "JOIN A CIRCLE",
       image: smallGroup,
       link: "/get-the-app",
     },
