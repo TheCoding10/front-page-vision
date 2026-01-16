@@ -10,10 +10,10 @@ const LatestSermonsSpotlight = () => {
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           {/* Left Column - Text (hidden on mobile, shown after image) */}
           <div className="order-2 md:order-1 text-center md:text-left">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight mb-6">
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground tracking-tight mb-6">
               LATEST SERMONS
             </h2>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
               Tell us in the comments
               <br />
               how the sermon impacted you
@@ -39,7 +39,7 @@ const LatestSermonsSpotlight = () => {
 
         {/* Footer Line */}
         <div className="mt-16 md:mt-20 text-center">
-          <p className="text-lg md:text-xl text-muted-foreground font-medium">
+          <p className="text-xl md:text-2xl text-muted-foreground font-medium">
             Accepted Jesus? We're here for you.
           </p>
         </div>
