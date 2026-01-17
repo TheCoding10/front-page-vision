@@ -13,11 +13,11 @@ const GetTheApp = () => {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 max-w-6xl mx-auto">
             {/* Phone Mockup - Left Side */}
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 flex items-center justify-center">
               <img 
                 src={appPhoneMockup} 
                 alt="God's Voice Ministries App" 
-                className="w-[280px] md:w-[320px] lg:w-[360px] h-auto object-contain"
+                className="w-[320px] md:w-[400px] lg:w-[480px] h-auto object-contain"
               />
             </div>
 
