@@ -11,20 +11,20 @@ const GetTheApp = () => {
       
       <main className="flex-1 bg-[#E5DDD5] py-16 md:py-24">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 lg:gap-24 max-w-7xl mx-auto">
             {/* Phone Mockup - Left Side */}
             <div className="flex-shrink-0 flex items-center justify-center">
               <img 
                 src={appPhoneMockup} 
                 alt="God's Voice Ministries App" 
-                className="w-[320px] md:w-[400px] lg:w-[480px] h-auto object-contain"
+                className="h-[400px] md:h-[480px] lg:h-[560px] w-auto object-contain"
               />
             </div>
 
             {/* Arrow */}
-            <div className="hidden md:block">
-              <svg className="w-24 h-16" viewBox="0 0 100 50" fill="none">
-                <path d="M5 25 H70 M70 25 L55 15 M70 25 L55 35" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <div className="hidden md:block flex-shrink-0">
+              <svg className="w-32 h-12" viewBox="0 0 120 40" fill="none">
+                <path d="M5 20 H95 M95 20 L80 10 M95 20 L80 30" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
 
@@ -38,7 +38,7 @@ const GetTheApp = () => {
                 <img 
                   src={appQrCode} 
                   alt="Download App QR Code" 
-                  className="w-64 h-64 border-4 border-black"
+                  className="h-[280px] md:h-[320px] lg:h-[340px] w-auto border-4 border-black"
                 />
               </div>
               
