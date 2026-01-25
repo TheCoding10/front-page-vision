@@ -133,6 +133,17 @@ const AboutUs = () => {
                 allowFullScreen
               />
             </div>
+            <p className="text-center text-xl md:text-2xl mt-8 text-muted-foreground">
+              Interested in inviting our ministry team?{" "}
+              <a 
+                href="https://godsvoiceministries.ccbchurch.com/goto/forms/36/responses/new"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:text-primary/80 underline underline-offset-2 decoration-primary/50 hover:decoration-primary transition-all duration-200 cursor-pointer"
+              >
+                Submit your request here.
+              </a>
+            </p>
           </div>
         </div>
       </section>
