@@ -29,8 +29,7 @@ const Hero = () => {
           size="lg"
           className="bg-secondary text-secondary-foreground hover:bg-secondary/90 text-base px-8 py-6 rounded-sm"
           onClick={() => {
-            const sermonsSection = document.querySelector('section.bg-background');
-            sermonsSection?.scrollIntoView({ behavior: 'smooth' });
+            window.open('https://www.youtube.com/watch?v=Y5itSBiclVo', '_blank');
           }}
         >
           Meet Jesus
