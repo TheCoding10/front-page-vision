@@ -233,7 +233,13 @@ const Partner = () => {
             
             {/* Footer Text */}
             <p className="text-center text-foreground text-lg">
-              Interested in being a partner or volunteering? Connect with our team here.
+              Interested in being a partner or volunteering?{" "}
+              <a 
+                href="mailto:betsy.munoz@gvmin.org"
+                className="text-primary hover:text-primary/80 underline underline-offset-2 decoration-primary/50 hover:decoration-primary transition-all duration-200 cursor-pointer"
+              >
+                Connect with our team here.
+              </a>
             </p>
           </div>
         </div>
