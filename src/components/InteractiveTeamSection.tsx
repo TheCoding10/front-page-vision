@@ -128,31 +128,9 @@ const InteractiveTeamSection: React.FC = () => {
       {/* Interactive Dots and Info Boxes */}
       {teamMembers.map((member) => (
         <React.Fragment key={member.id}>
-          {/* Connector Line to Name Box (going up) */}
+          {/* Name Box - Always Visible */}
           <div
-            className={`absolute z-10 pointer-events-none transition-all duration-300 ease-out ${
-              activeMember === member.id
-                ? "opacity-100 scale-y-100"
-                : "opacity-0 scale-y-0"
-            }`}
-            style={{
-              bottom: `calc(100% - ${member.dotPosition.top})`,
-              left: member.dotPosition.left,
-              width: "2px",
-              height: member.lineToName.height,
-              transformOrigin: "bottom center",
-            }}
-          >
-            <div className="w-full h-full bg-white rounded-full" />
-          </div>
-
-          {/* Name Box */}
-          <div
-            className={`absolute z-20 transition-all duration-300 ease-out pointer-events-none ${
-              activeMember === member.id
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-2"
-            }`}
+            className="absolute z-20 pointer-events-none"
             style={{
               top: member.nameBoxPosition.top,
               left: member.nameBoxPosition.left,
@@ -187,7 +165,7 @@ const InteractiveTeamSection: React.FC = () => {
             </span>
           </button>
 
-          {/* Connector Line to Blurb Box (going down) */}
+          {/* Connector Line to Blurb Box (going down only) */}
           <div
             className={`absolute z-10 pointer-events-none transition-all duration-300 ease-out ${
               activeMember === member.id
@@ -206,7 +184,7 @@ const InteractiveTeamSection: React.FC = () => {
             <div className="w-full h-full bg-white rounded-full" />
           </div>
 
-          {/* Blurb Box */}
+          {/* Blurb Box - Hover Only */}
           <div
             className={`absolute z-20 transition-all duration-300 ease-out pointer-events-none ${
               activeMember === member.id
