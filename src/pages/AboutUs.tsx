@@ -123,7 +123,7 @@ const AboutUs = () => {
             THROUGH THIS VISION
           </h2>
           
-          <div className="w-full max-w-5xl">
+          <div className="w-full max-w-5xl mx-auto">
             <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
