@@ -127,7 +127,7 @@ const AboutUs = () => {
             <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/59XdKAF5DdA"
+                src="https://www.youtube.com/embed/kEOC4Nb38VY"
                 title="Through This Vision - Build Different 2025"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
