@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import partnerHero from "@/assets/partner-hero.jpg";
-import underTheTarpVideo from "@/assets/under-the-tarp.mp4";
+import underTheTarpVideo from "@/assets/utt-cinematic.mp4";
 import partnerKitchen from "@/assets/partner-kitchen.jpg";
 import partnerMeal from "@/assets/partner-meal.jpg";
 import partnerOutreach from "@/assets/partner-outreach.jpg";
