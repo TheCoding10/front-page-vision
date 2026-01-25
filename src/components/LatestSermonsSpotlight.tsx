@@ -40,7 +40,15 @@ const LatestSermonsSpotlight = () => {
         {/* Footer Line */}
         <div className="mt-16 md:mt-20 text-center">
           <p className="text-xl md:text-2xl text-muted-foreground font-medium">
-            Accepted Jesus? We're here for you.
+            Accepted Jesus?{" "}
+            <a 
+              href="/next-steps-2025.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:text-primary/80 underline underline-offset-2 decoration-primary/50 hover:decoration-primary transition-all duration-200 cursor-pointer"
+            >
+              We're here for you.
+            </a>
           </p>
         </div>
       </div>
