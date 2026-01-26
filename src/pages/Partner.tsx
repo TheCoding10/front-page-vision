@@ -96,150 +96,152 @@ const Partner = () => {
       </section>
 
       {/* How Your Giving Is Reaching Others Section */}
-      <section className="py-16 md:py-20 bg-[#E8E3DD]">
-        {/* Section Title - Left aligned with padding */}
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-8 md:mb-10 tracking-wide px-6 md:px-12 lg:px-16">
-          HOW YOUR GIVING IS REACHING OTHERS
-        </h2>
-        
-        {/* Two Column Layout - Video flush left, text right */}
-        <div className="flex flex-col lg:flex-row">
-          {/* Video Section - 55% width, flush to left edge */}
-          <div className="w-full lg:w-[55%] flex-shrink-0">
-            <div className="relative aspect-[3/4] lg:aspect-[4/5] w-full overflow-hidden">
-              <video
-                src={underTheTarpVideo}
-                controls
-                className="w-full h-full object-cover"
-                poster=""
-              >
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
+      <section className="py-24 md:py-32 bg-[#E8E3DD]">
+        <div className="container mx-auto px-6 md:px-12 lg:px-16">
+          {/* Section Title */}
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-16 md:mb-20 text-center tracking-wide">
+            HOW YOUR GIVING IS REACHING OTHERS
+          </h2>
           
-          {/* Text Content - 45% width, vertically centered */}
-          <div className="w-full lg:w-[45%] flex items-center px-6 md:px-12 lg:px-16 py-12 lg:py-0">
-            <div className="space-y-6 max-w-lg">
-              <h3 className="text-3xl md:text-4xl font-normal text-foreground tracking-wide text-center lg:text-left">
+          {/* Desktop Feature Layout */}
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 xl:gap-20 items-center max-w-7xl mx-auto">
+            {/* Video Section - Desktop Landscape */}
+            <div className="w-full lg:w-[55%] flex-shrink-0">
+              <div className="relative aspect-[4/5] md:aspect-[4/5] lg:aspect-[4/5] w-full overflow-hidden rounded-lg shadow-xl">
+                <video
+                  src={underTheTarpVideo}
+                  controls
+                  className="w-full h-full object-cover"
+                  poster=""
+                >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            
+            {/* Text Content - Vertically Centered */}
+            <div className="w-full lg:w-[45%] space-y-8 lg:pl-4">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground tracking-tight">
                 UNDER THE TARP
               </h3>
               
-              <p className="text-base md:text-lg text-foreground leading-relaxed">
-                Think carnival meets community care – that's <strong className="font-semibold">Under the Tarp</strong>. Every year, we bring the fun (games, food, face painting) and team up with community partners, first responders, and local businesses to deliver what people actually need – backpacks, books, Narcan, free haircuts and more – all in one place.
-              </p>
+              <div className="space-y-6 max-w-xl">
+                <p className="text-lg md:text-xl text-foreground leading-relaxed">
+                  Think carnival meets community care — that's <strong className="font-semibold">Under the Tarp</strong>. Every year, we bring the fun (games, food, face painting) and team up with community partners, first responders, and local businesses to deliver what people actually need – backpacks, books, Narcan, free haircuts and more – all in one place.
+                </p>
+                
+                <p className="text-lg md:text-xl text-foreground leading-relaxed">
+                  It's part block party, part resource hub, and all about showing up with Jesus' love in action.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          {/* Programs Section */}
+          <div className="mt-20 max-w-6xl mx-auto">
+            <p className="text-lg text-foreground mb-12 text-center leading-relaxed">
+              Thanks to your donations, we've been able to be the hands and feet of Jesus and meet people in their need through
+            </p>
+            
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Our Pantry Program */}
+              <div className="space-y-3">
+                <h4 className="text-xl font-bold text-foreground">
+                  OUR PANTRY PROGRAM
+                </h4>
+                <p className="text-foreground">Through local and church donations, we are able to lighten the load of our community with groceries, personal care products and more.</p>
+              </div>
               
-              <p className="text-base md:text-lg text-foreground leading-relaxed">
-                It's part block party, part resource hub, and all about showing up with Jesus' love in action.
-              </p>
+              {/* Bringing a Meal */}
+              <div className="space-y-3">
+                <h4 className="text-xl font-bold text-foreground">
+                  BRINGING A MEAL
+                </h4>
+                <p className="text-foreground">We partner with local organizations to bring a warm, home-cooked meal for anyone who needs it.</p>
+              </div>
+              
+              {/* Evangelism */}
+              <div className="space-y-3">
+                <h4 className="text-xl font-bold text-foreground">
+                  EVANGELISM
+                </h4>
+                <p className="text-foreground">Like Peter in Acts 3:6, in everything that we do and anyway that we can, we will share the love, freedom and salvation that was freely given to us.</p>
+              </div>
             </div>
           </div>
-        </div>
           
-        {/* Programs Section */}
-        <div className="mt-20 max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
-          <p className="text-lg text-foreground mb-12 text-center leading-relaxed">
-            Thanks to your donations, we've been able to be the hands and feet of Jesus and meet people in their need through
-          </p>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Our Pantry Program */}
-            <div className="space-y-3">
-              <h4 className="text-xl font-bold text-foreground">
-                OUR PANTRY PROGRAM
-              </h4>
-              <p className="text-foreground">Through local and church donations, we are able to lighten the load of our community with groceries, personal care products and more.</p>
+          {/* Our Partners Section */}
+          <div className="mt-20">
+            {/* Three Images */}
+            <div className="grid md:grid-cols-3 gap-0 mb-12">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={partnerKitchen} 
+                  alt="Volunteers in kitchen" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={partnerMeal} 
+                  alt="Food being served" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={partnerOutreach} 
+                  alt="Community outreach" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
             
-            {/* Bringing a Meal */}
-            <div className="space-y-3">
-              <h4 className="text-xl font-bold text-foreground">
-                BRINGING A MEAL
-              </h4>
-              <p className="text-foreground">We partner with local organizations to bring a warm, home-cooked meal for anyone who needs it.</p>
+            {/* Partners Heading */}
+            <h3 className="text-4xl font-bold text-foreground mb-12">
+              OUR PARTNERS
+            </h3>
+            
+            {/* Partner Logos - Two Horizontal Rows */}
+            <div className="flex flex-col gap-8 md:gap-12 mb-12">
+              {/* Row 1 */}
+              <div className="flex flex-wrap md:flex-nowrap justify-center items-center gap-6 md:gap-8 lg:gap-12">
+                {partnerLogos.slice(0, 9).map((partner, i) => (
+                  <div key={i} className="flex-shrink-0 h-12 md:h-14 lg:h-16">
+                    <img 
+                      src={partner.src} 
+                      alt={partner.alt} 
+                      className="h-full w-auto object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
+              
+              {/* Row 2 */}
+              <div className="flex flex-wrap md:flex-nowrap justify-center items-center gap-6 md:gap-8 lg:gap-12">
+                {partnerLogos.slice(9).map((partner, i) => (
+                  <div key={i} className="flex-shrink-0 h-12 md:h-14 lg:h-16">
+                    <img 
+                      src={partner.src} 
+                      alt={partner.alt} 
+                      className="h-full w-auto object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
             
-            {/* Evangelism */}
-            <div className="space-y-3">
-              <h4 className="text-xl font-bold text-foreground">
-                EVANGELISM
-              </h4>
-              <p className="text-foreground">Like Peter in Acts 3:6, in everything that we do and anyway that we can, we will share the love, freedom and salvation that was freely given to us.</p>
-            </div>
+            {/* Footer Text */}
+            <p className="text-center text-foreground text-lg">
+              Interested in being a partner or volunteering?{" "}
+              <a 
+                href="mailto:betsy.munoz@gvmin.org"
+                className="text-primary hover:text-primary/80 underline underline-offset-2 decoration-primary/50 hover:decoration-primary transition-all duration-200 cursor-pointer"
+              >
+                Connect with our team here.
+              </a>
+            </p>
           </div>
-        </div>
-        
-        {/* Our Partners Section */}
-        <div className="mt-20 px-6 md:px-12 lg:px-16">
-          {/* Three Images */}
-          <div className="grid md:grid-cols-3 gap-0 mb-12">
-            <div className="aspect-[4/3] overflow-hidden">
-              <img 
-                src={partnerKitchen} 
-                alt="Volunteers in kitchen" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="aspect-[4/3] overflow-hidden">
-              <img 
-                src={partnerMeal} 
-                alt="Food being served" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="aspect-[4/3] overflow-hidden">
-              <img 
-                src={partnerOutreach} 
-                alt="Community outreach" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-          
-          {/* Partners Heading */}
-          <h3 className="text-4xl font-bold text-foreground mb-12">
-            OUR PARTNERS
-          </h3>
-          
-          {/* Partner Logos - Two Horizontal Rows */}
-          <div className="flex flex-col gap-8 md:gap-12 mb-12">
-            {/* Row 1 */}
-            <div className="flex flex-wrap md:flex-nowrap justify-center items-center gap-6 md:gap-8 lg:gap-12">
-              {partnerLogos.slice(0, 9).map((partner, i) => (
-                <div key={i} className="flex-shrink-0 h-12 md:h-14 lg:h-16">
-                  <img 
-                    src={partner.src} 
-                    alt={partner.alt} 
-                    className="h-full w-auto object-contain"
-                  />
-                </div>
-              ))}
-            </div>
-            
-            {/* Row 2 */}
-            <div className="flex flex-wrap md:flex-nowrap justify-center items-center gap-6 md:gap-8 lg:gap-12">
-              {partnerLogos.slice(9).map((partner, i) => (
-                <div key={i} className="flex-shrink-0 h-12 md:h-14 lg:h-16">
-                  <img 
-                    src={partner.src} 
-                    alt={partner.alt} 
-                    className="h-full w-auto object-contain"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-          
-          {/* Footer Text */}
-          <p className="text-center text-foreground text-lg">
-            Interested in being a partner or volunteering?{" "}
-            <a 
-              href="mailto:betsy.munoz@gvmin.org"
-              className="text-primary hover:text-primary/80 underline underline-offset-2 decoration-primary/50 hover:decoration-primary transition-all duration-200 cursor-pointer"
-            >
-              Connect with our team here.
-            </a>
-          </p>
         </div>
       </section>
 
