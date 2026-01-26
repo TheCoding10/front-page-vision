@@ -2,24 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[#3a3a3a] text-white">
-      {/* Wavy border at top */}
-      <div className="absolute top-0 left-0 right-0 h-24 bg-background z-0">
-        <svg
-          className="absolute bottom-0 w-full h-24"
-          viewBox="0 0 1440 100"
-          preserveAspectRatio="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M0,50 Q360,0 720,50 T1440,50 L1440,100 L0,100 Z"
-            fill="#3a3a3a"
-          />
-        </svg>
-      </div>
-
+    <footer className="bg-[#3a3a3a] text-white">
       {/* Main footer content */}
-      <div className="container mx-auto px-6 pt-40 pb-12 max-w-7xl relative z-10">
+      <div className="container mx-auto px-6 py-12 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16">
           {/* Left section - Title at top, address at bottom */}
           <div className="min-w-0 flex flex-col">
