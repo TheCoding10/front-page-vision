@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Menu } from "lucide-react";
 import { Link } from "react-router-dom";
-import heartbeatLogo from "@/assets/heartbeat-logo.png";
+import gvmLogo from "@/assets/gvm-logo-black.png";
 import {
   Sheet,
   SheetContent,
@@ -29,17 +29,17 @@ const Header = ({ variant = "transparent" }: HeaderProps) => {
     : "absolute top-0 left-0 right-0";
 
   return (
-    <header className={`z-50 p-6 ${headerClasses}`}>
+    <header className={`z-50 p-4 ${headerClasses}`}>
       <div className="container mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
           <img 
-            src={heartbeatLogo} 
+            src={gvmLogo} 
             alt="Gods Voice Ministries Logo" 
-            className="h-12 w-12 invert"
+            className="h-10 w-10 invert brightness-0 invert"
           />
-          <div className="text-primary-foreground">
-            <h1 className="text-lg font-bold tracking-tight">GODS VOICE</h1>
-            <p className="text-xs tracking-wider">MINISTRIES</p>
+          <div className="text-primary-foreground leading-none">
+            <h1 className="text-sm font-bold tracking-tight leading-none">GODS VOICE</h1>
+            <p className="text-[10px] tracking-[0.15em] leading-none mt-0.5">MINISTRIES</p>
           </div>
         </div>
         
