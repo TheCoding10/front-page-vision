@@ -1,5 +1,5 @@
 import React from "react";
-
+import gvmLogo from "@/assets/gvm-heartbeat-logo.png";
 const Footer = () => {
   return (
     <footer className="bg-[#3a3a3a] text-white">
@@ -129,10 +129,12 @@ const Footer = () => {
           <p className="text-sm text-white">
             © 2025 God's Voice Ministries | All rights reserved.
           </p>
-          {/* Heartbeat icon */}
-          <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-          </svg>
+          {/* Heartbeat logo */}
+          <img 
+            src={gvmLogo} 
+            alt="Gods Voice Ministries" 
+            className="w-10 h-10 rounded-full"
+          />
         </div>
       </div>
     </footer>
