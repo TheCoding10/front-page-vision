@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Menu } from "lucide-react";
 import { Link } from "react-router-dom";
-import gvmLogo from "@/assets/gvm-logo-black.png";
+import gvmLogo from "@/assets/gvm-heartbeat-logo.png";
 import {
   Sheet,
   SheetContent,
@@ -35,7 +35,7 @@ const Header = ({ variant = "transparent" }: HeaderProps) => {
           <img 
             src={gvmLogo} 
             alt="Gods Voice Ministries Logo" 
-            className="h-10 w-10 invert brightness-0 invert"
+            className="h-10 w-10 rounded-full"
           />
           <div className="text-primary-foreground leading-none">
             <h1 className="text-sm font-bold tracking-tight leading-none">GODS VOICE</h1>
