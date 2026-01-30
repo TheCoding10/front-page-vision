@@ -127,7 +127,7 @@ const Footer = () => {
       <div className="border-t border-gray-600 py-6">
         <div className="container mx-auto px-6 flex justify-between items-center">
           <p className="text-sm text-white">
-            © 2025 God's Voice Ministries | All rights reserved.
+            © 2026 God's Voice Ministries | All rights reserved.
           </p>
           {/* Heartbeat logo */}
           <img 
