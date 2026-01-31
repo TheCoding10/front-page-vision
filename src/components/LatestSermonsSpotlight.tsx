@@ -142,7 +142,7 @@ const LatestSermonsSpotlight = () => {
         </div>
 
         {/* Footer Line */}
-        <div className="mt-16 md:mt-20 text-center">
+        <div className="mt-12 md:mt-14 text-center">
           <p className="text-xl md:text-2xl text-muted-foreground font-medium">
             Accepted Jesus?{" "}
             <a
