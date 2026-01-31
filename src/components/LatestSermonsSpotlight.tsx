@@ -87,7 +87,7 @@ const LatestSermonsSpotlight = () => {
   );
 
   return (
-    <section className="py-20 md:py-28 bg-background">
+    <section className="pt-20 md:pt-28 pb-8 md:pb-10 bg-background">
       <div className="container mx-auto px-6">
         {/* Two-column layout */}
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
