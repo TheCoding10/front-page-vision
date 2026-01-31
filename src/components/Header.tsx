@@ -39,7 +39,7 @@ const Header = ({ variant = "transparent" }: HeaderProps) => {
           />
           <div className="text-primary-foreground leading-none">
             <h1 className="text-sm font-bold tracking-tight leading-none">GODS VOICE</h1>
-            <p className="text-[10px] tracking-[0.15em] leading-none mt-0.5">MINISTRIES</p>
+            <p className="text-[10px] font-bold tracking-[0.15em] leading-none mt-0.5">MINISTRIES</p>
           </div>
         </div>
         
