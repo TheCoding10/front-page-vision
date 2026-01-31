@@ -3,7 +3,7 @@ import meetCoffee from "@/assets/meet-us-coffee.jpg";
 import smallGroup from "@/assets/small-group.jpg";
 import readScripture from "@/assets/read-scripture.jpg";
 import instagram from "@/assets/instagram.jpg";
-import serveCommunity from "@/assets/serve-community.jpg";
+import serveCommunity from "@/assets/serve-community-grilling.png";
 import worshipMusic from "@/assets/worship-music.jpg";
 
 const SermonsSection = () => {
