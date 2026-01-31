@@ -92,8 +92,8 @@ const LatestSermonsSpotlight = () => {
         {/* Two-column layout */}
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           {/* Left Column - Text */}
-          <div className="order-2 md:order-1 text-center md:text-left flex flex-col justify-center">
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground tracking-tight mb-6">
+          <div className="order-2 md:order-1 text-center md:text-left flex flex-col md:justify-center md:min-h-[280px] lg:min-h-[320px]">
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground tracking-tight mb-4">
               LATEST SERMONS
             </h2>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
