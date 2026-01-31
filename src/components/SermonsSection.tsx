@@ -10,9 +10,9 @@ const SermonsSection = () => {
   const cards = [
     {
       id: 1,
-      title: "MEET US OVER COFFEE",
+      title: "CONNECT WITH US",
       image: meetCoffee,
-      link: "https://godsvoiceministries.ccbchurch.com/goto/forms/8/responses/new",
+      link: "https://godsvoiceministries.ccbchurch.com/goto/forms/6/responses/new",
       external: true,
     },
     {
