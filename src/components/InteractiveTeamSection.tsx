@@ -110,100 +110,140 @@ const InteractiveTeamSection: React.FC = () => {
   };
 
   return (
-    <div
-      ref={containerRef}
-      className="relative w-full mx-auto"
-      style={{ aspectRatio: "21/10" }}
-    >
-      {/* Background Image */}
-      <div className="absolute inset-0 bg-[#3d4a4f] rounded-lg overflow-hidden">
-        <img
-          src={teamPhoto}
-          alt="God's Voice Ministries Leadership Team"
-          className="w-full h-full object-cover object-center"
-          style={{ objectPosition: "center 25%" }}
-        />
-      </div>
-
-      {/* Interactive Dots and Info Boxes */}
-      {teamMembers.map((member) => (
-        <React.Fragment key={member.id}>
-          {/* Name Box - Always Visible */}
-          <div
-            className="absolute z-20 pointer-events-none"
-            style={{
-              top: member.nameBoxPosition.top,
-              left: member.nameBoxPosition.left,
-            }}
-          >
-            <div className="bg-white rounded-lg px-4 py-2 shadow-lg text-center whitespace-nowrap">
-              <p className="text-black font-semibold text-sm md:text-base">
+    <div ref={containerRef} className="w-full mx-auto">
+      {/* Mobile Layout */}
+      <div className="block md:hidden">
+        {/* Team Photo */}
+        <div className="relative w-full rounded-lg overflow-hidden" style={{ aspectRatio: "16/10" }}>
+          <img
+            src={teamPhoto}
+            alt="God's Voice Ministries Leadership Team"
+            className="w-full h-full object-cover object-center"
+            style={{ objectPosition: "center 25%" }}
+          />
+        </div>
+        
+        {/* Team Members List */}
+        <div className="mt-4 grid grid-cols-2 gap-3">
+          {teamMembers.map((member) => (
+            <button
+              key={member.id}
+              onClick={() => handleDotClick(member.id)}
+              className={`bg-white rounded-lg px-3 py-2 shadow-md text-left transition-all duration-200 ${
+                activeMember === member.id ? "ring-2 ring-black" : ""
+              }`}
+            >
+              <p className="text-black font-semibold text-xs leading-tight">
                 {member.name}
               </p>
-              <p className="text-black text-xs md:text-sm">{member.role}</p>
-            </div>
-          </div>
-
-          {/* Interactive Dot */}
-          <button
-            onClick={() => handleDotClick(member.id)}
-            onMouseEnter={() => handleDotHover(member.id)}
-            onMouseLeave={() => handleDotHover(null)}
-            className={`absolute z-30 w-6 h-6 md:w-8 md:h-8 rounded-full border-2 border-white bg-white/30 backdrop-blur-sm cursor-pointer transition-all duration-200 hover:scale-110 hover:bg-white/50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-transparent ${
-              activeMember === member.id ? "bg-white/60 scale-110" : ""
-            }`}
-            style={{
-              top: member.dotPosition.top,
-              left: member.dotPosition.left,
-              transform: "translate(-50%, -50%)",
-            }}
-            aria-label={`Learn more about ${member.name}`}
-            aria-expanded={activeMember === member.id}
-          >
-            <span className="sr-only">
-              Click to learn about {member.name}, {member.role}
-            </span>
-          </button>
-
-          {/* Connector Line to Blurb Box (going down only) */}
-          <div
-            className={`absolute z-10 pointer-events-none transition-all duration-300 ease-out ${
-              activeMember === member.id
-                ? "opacity-100 scale-y-100"
-                : "opacity-0 scale-y-0"
-            }`}
-            style={{
-              top: member.dotPosition.top,
-              left: member.dotPosition.left,
-              width: "2px",
-              height: member.lineToBlurb.height,
-              transformOrigin: "top center",
-              transform: "translateX(-50%)",
-            }}
-          >
-            <div className="w-full h-full bg-white rounded-full" />
-          </div>
-
-          {/* Blurb Box - Hover Only */}
-          <div
-            className={`absolute z-20 transition-all duration-300 ease-out pointer-events-none ${
-              activeMember === member.id
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-2"
-            }`}
-            style={{
-              top: member.blurbPosition.top,
-              left: member.blurbPosition.left,
-            }}
-          >
-            <div className="bg-white rounded-lg px-4 py-3 shadow-lg max-w-[200px] md:max-w-[240px]">
-              <p className="text-black text-xs md:text-sm text-center leading-relaxed">
-                {member.blurb}
+              <p className="text-black/70 text-[10px] leading-tight mt-0.5">
+                {member.role}
               </p>
+              {activeMember === member.id && (
+                <p className="text-black/60 text-[10px] leading-snug mt-2 pt-2 border-t border-gray-200">
+                  {member.blurb}
+                </p>
+              )}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Desktop Layout - Unchanged */}
+      <div
+        className="hidden md:block relative w-full"
+        style={{ aspectRatio: "21/10" }}
+      >
+        {/* Background Image */}
+        <div className="absolute inset-0 bg-[#3d4a4f] rounded-lg overflow-hidden">
+          <img
+            src={teamPhoto}
+            alt="God's Voice Ministries Leadership Team"
+            className="w-full h-full object-cover object-center"
+            style={{ objectPosition: "center 25%" }}
+          />
+        </div>
+
+        {/* Interactive Dots and Info Boxes */}
+        {teamMembers.map((member) => (
+          <React.Fragment key={member.id}>
+            {/* Name Box - Always Visible */}
+            <div
+              className="absolute z-20 pointer-events-none"
+              style={{
+                top: member.nameBoxPosition.top,
+                left: member.nameBoxPosition.left,
+              }}
+            >
+              <div className="bg-white rounded-lg px-4 py-2 shadow-lg text-center whitespace-nowrap">
+                <p className="text-black font-semibold text-sm md:text-base">
+                  {member.name}
+                </p>
+                <p className="text-black text-xs md:text-sm">{member.role}</p>
+              </div>
             </div>
-          </div>
-        </React.Fragment>
-      ))}
+
+            {/* Interactive Dot */}
+            <button
+              onClick={() => handleDotClick(member.id)}
+              onMouseEnter={() => handleDotHover(member.id)}
+              onMouseLeave={() => handleDotHover(null)}
+              className={`absolute z-30 w-6 h-6 md:w-8 md:h-8 rounded-full border-2 border-white bg-white/30 backdrop-blur-sm cursor-pointer transition-all duration-200 hover:scale-110 hover:bg-white/50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-transparent ${
+                activeMember === member.id ? "bg-white/60 scale-110" : ""
+              }`}
+              style={{
+                top: member.dotPosition.top,
+                left: member.dotPosition.left,
+                transform: "translate(-50%, -50%)",
+              }}
+              aria-label={`Learn more about ${member.name}`}
+              aria-expanded={activeMember === member.id}
+            >
+              <span className="sr-only">
+                Click to learn about {member.name}, {member.role}
+              </span>
+            </button>
+
+            {/* Connector Line to Blurb Box (going down only) */}
+            <div
+              className={`absolute z-10 pointer-events-none transition-all duration-300 ease-out ${
+                activeMember === member.id
+                  ? "opacity-100 scale-y-100"
+                  : "opacity-0 scale-y-0"
+              }`}
+              style={{
+                top: member.dotPosition.top,
+                left: member.dotPosition.left,
+                width: "2px",
+                height: member.lineToBlurb.height,
+                transformOrigin: "top center",
+                transform: "translateX(-50%)",
+              }}
+            >
+              <div className="w-full h-full bg-white rounded-full" />
+            </div>
+
+            {/* Blurb Box - Hover Only */}
+            <div
+              className={`absolute z-20 transition-all duration-300 ease-out pointer-events-none ${
+                activeMember === member.id
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-2"
+              }`}
+              style={{
+                top: member.blurbPosition.top,
+                left: member.blurbPosition.left,
+              }}
+            >
+              <div className="bg-white rounded-lg px-4 py-3 shadow-lg max-w-[200px] md:max-w-[240px]">
+                <p className="text-black text-xs md:text-sm text-center leading-relaxed">
+                  {member.blurb}
+                </p>
+              </div>
+            </div>
+          </React.Fragment>
+        ))}
+      </div>
     </div>
   );
 };
