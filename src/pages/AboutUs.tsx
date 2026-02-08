@@ -2,7 +2,7 @@ import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import InteractiveTeamSection from "@/components/InteractiveTeamSection";
-import pastorsFamily from "@/assets/pastors-family.png";
+import pastorsFamily from "@/assets/pastors-family-new.png";
 
 const AboutUs = () => {
   return (
