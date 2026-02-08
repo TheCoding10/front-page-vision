@@ -42,10 +42,10 @@ const AboutUs = () => {
       </section>
 
       {/* Building Together Section */}
-      <section className="bg-white py-20 md:py-28">
+      <section className="bg-[#E5DDD5] py-20 md:py-28">
         <div className="container mx-auto px-6 md:px-12 lg:px-16 max-w-[1400px]">
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-normal mb-14 md:mb-16">
-            BUILDING <span className="font-bold">TOGETHER</span>
+            BUILDING TOGETHER
           </h2>
           
           <div className="mb-20 md:mb-24">
