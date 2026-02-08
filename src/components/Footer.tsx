@@ -2,7 +2,7 @@ import React from "react";
 import gvmLogo from "@/assets/gvm-heartbeat-logo.png";
 const Footer = () => {
   return (
-    <footer className="bg-[#3a3a3a] text-white">
+    <footer className="bg-[#2c3334] text-white">
       {/* Main footer content */}
       <div className="container mx-auto px-6 py-12 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16">
