@@ -72,7 +72,7 @@ const SermonsSection = () => {
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-center justify-center">
-                <h3 className="text-white text-xl md:text-2xl font-bold text-center px-6 drop-shadow-lg">
+                <h3 className="text-white text-xl md:text-2xl font-bold text-center px-6 drop-shadow-lg" style={{ fontFamily: "'LEMONMILK', sans-serif" }}>
                   {card.title}
                 </h3>
               </div>
