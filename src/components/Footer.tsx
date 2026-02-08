@@ -60,7 +60,9 @@ const Footer = () => {
                 Give
               </a>
               <a 
-                href="mailto:connect@gvmin.org?subject=Team%20Invitation" 
+                href="https://godsvoiceministries.ccbchurch.com/goto/forms/36/responses/new" 
+                target="_blank" 
+                rel="noopener noreferrer" 
                 className="text-white hover:opacity-70 transition-opacity"
               >
                 Invite Our Team
@@ -81,7 +83,7 @@ const Footer = () => {
                 Bible App
               </a>
               <a 
-                href="https://gvmincranston.ccbchurch.com/goto/forms/43/responses/new" 
+                href="https://godsvoiceministries.ccbchurch.com/goto/forms/6/responses/new" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-white hover:opacity-70 transition-opacity"
