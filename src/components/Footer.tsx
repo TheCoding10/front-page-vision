@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16">
           {/* Left section - Title at top, address at bottom */}
           <div className="min-w-0 flex flex-col">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-auto leading-tight break-words italic" style={{ fontFamily: "'LEMONMILK', sans-serif" }}>
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-auto leading-tight break-words" style={{ fontFamily: "'LEMONMILK', sans-serif" }}>
               HEAR HIS VOICE<br />AND RESPOND.
             </h2>
             <div className="text-base text-white space-y-1 mt-16">
