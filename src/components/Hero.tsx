@@ -20,7 +20,7 @@ const Hero = () => {
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-[3.5rem] font-bold text-primary-foreground mb-8 w-full mx-auto leading-tight whitespace-nowrap" style={{ fontFamily: "'LEMONMILK', sans-serif" }}>
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[3.5rem] font-bold text-primary-foreground mb-8 max-w-full mx-auto leading-tight whitespace-normal md:whitespace-nowrap px-5 md:px-0 break-words md:break-normal" style={{ fontFamily: "'LEMONMILK', sans-serif" }}>
           <span className="block">WHAT IF MY PURSUIT OF PURPOSE WAS</span>
           <span className="block">REALLY THE PURSUIT OF HIM?</span>
         </h1>
