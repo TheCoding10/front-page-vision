@@ -113,7 +113,7 @@ const Footer = () => {
                 Instagram
               </a>
               <a 
-                href="https://youtube.com/@godsvoiceministries" 
+                href="https://www.youtube.com/@godsvoiceministries0114" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-white hover:opacity-70 transition-opacity"
