@@ -68,12 +68,12 @@ const Partner = () => {
         
         {/* Content */}
         <div className="relative z-10 container mx-auto px-6 text-center max-w-6xl">
-          <h1 className="text-5xl md:text-7xl font-normal mb-6 text-[#D4AF37] italic">
+          <h1 className="text-5xl md:text-7xl font-normal mb-6 text-[#D4AF37]">
             THE GOSPEL IN ACTION
           </h1>
           
           <p className="text-xl md:text-2xl text-white mb-8 font-light">
-            Because love it's just a feeling - it's an action.
+            Because love is not just a feeling - it's an action.
           </p>
           
           <p className="text-base md:text-lg text-white mb-12 leading-relaxed max-w-5xl mx-auto">
