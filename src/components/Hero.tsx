@@ -20,9 +20,9 @@ const Hero = () => {
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-8 max-w-4xl mx-auto leading-tight" style={{ fontFamily: "'LEMONMILK', sans-serif" }}>
-          WHAT IF MY PURSUIT OF PURPOSE WAS<br />
-          REALLY THE PURSUIT OF HIM?
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-8 max-w-5xl mx-auto leading-tight" style={{ fontFamily: "'LEMONMILK', sans-serif" }}>
+          <span className="block">WHAT IF MY PURSUIT OF PURPOSE WAS</span>
+          <span className="block">REALLY THE PURSUIT OF HIM?</span>
         </h1>
         
         <Button 
