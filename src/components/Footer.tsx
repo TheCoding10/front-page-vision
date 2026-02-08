@@ -44,7 +44,7 @@ const Footer = () => {
             <h3 className="text-xl font-bold text-white mb-6 break-words">Partner With Us</h3>
             <div className="space-y-3 flex flex-col items-start text-base">
               <a 
-                href="https://gvmincranston.ccbchurch.com/login.php" 
+                href="https://godsvoiceministries.ccbchurch.com/goto/login" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-white hover:opacity-70 transition-opacity"
@@ -75,7 +75,7 @@ const Footer = () => {
             <h3 className="text-xl font-bold text-white mb-6 break-words">Stay Connected</h3>
             <div className="space-y-3 flex flex-col items-start text-base">
               <a 
-                href="https://www.bible.com/users/godsvoiceministries" 
+                href="https://www.bible.com/organizations/8a527f1b-08ce-4cea-828a-5c1004d4d77e?utm_source=yvapp&utm_medium=share&utm_content=partner-page" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-white hover:opacity-70 transition-opacity"
