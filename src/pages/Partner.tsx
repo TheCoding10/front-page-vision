@@ -99,7 +99,7 @@ const Partner = () => {
       <section className="py-24 md:py-32 bg-[#E8E3DD]">
         <div className="container mx-auto px-6 md:px-12 lg:px-16">
           {/* Section Title */}
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-16 md:mb-20 text-center tracking-wide">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-16 md:mb-20 text-center tracking-wide" style={{ fontFamily: "'LEMONMILK', sans-serif" }}>
             HOW YOUR GIVING IS REACHING OTHERS
           </h2>
           
@@ -198,7 +198,7 @@ const Partner = () => {
             </div>
             
             {/* Partners Heading */}
-            <h3 className="text-4xl font-bold text-foreground mb-12">
+            <h3 className="text-4xl font-bold text-foreground mb-12" style={{ fontFamily: "'LEMONMILK', sans-serif" }}>
               OUR PARTNERS
             </h3>
             
