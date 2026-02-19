@@ -19,7 +19,7 @@ const Footer = () => {
           </div>
 
           {/* RIGHT BLOCK - Three columns grouped together */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-12 lg:gap-16">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-10 lg:gap-[60px]" style={{ justifyContent: 'center' }}>
             {/* Contact Us */}
             <div className="min-w-0">
               <h3 className="text-xl font-bold text-white mb-6 break-words">Contact Us</h3>
