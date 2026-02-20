@@ -96,7 +96,7 @@ const Partner = () => {
       </section>
 
       {/* How Your Giving Is Reaching Others Section */}
-      <section className="py-24 md:py-32 bg-[#E8E3DD]">
+      <section className="pt-24 md:pt-32 pb-12 md:pb-16 bg-[#E8E3DD]">
         <div className="container mx-auto px-6 md:px-12 lg:px-16">
           {/* Section Title */}
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-16 md:mb-20 text-center tracking-wide" style={{ fontFamily: "'LEMONMILK', sans-serif" }}>
