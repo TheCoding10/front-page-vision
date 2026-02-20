@@ -203,32 +203,16 @@ const Partner = () => {
             </h3>
             
             {/* Partner Logos - Two Horizontal Rows */}
-            <div className="flex flex-col gap-8 md:gap-12 mb-12">
-              {/* Row 1 */}
-              <div className="flex flex-wrap md:flex-nowrap justify-center items-center gap-6 md:gap-8 lg:gap-12">
-                {partnerLogos.slice(0, 9).map((partner, i) => (
-                  <div key={i} className="flex-shrink-0 h-12 md:h-14 lg:h-16">
-                    <img 
-                      src={partner.src} 
-                      alt={partner.alt} 
-                      className="h-full w-auto object-contain"
-                    />
-                  </div>
-                ))}
-              </div>
-              
-              {/* Row 2 */}
-              <div className="flex flex-wrap md:flex-nowrap justify-center items-center gap-6 md:gap-8 lg:gap-12">
-                {partnerLogos.slice(9).map((partner, i) => (
-                  <div key={i} className="flex-shrink-0 h-12 md:h-14 lg:h-16">
-                    <img 
-                      src={partner.src} 
-                      alt={partner.alt} 
-                      className="h-full w-auto object-contain"
-                    />
-                  </div>
-                ))}
-              </div>
+            <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8 lg:gap-10 mb-12">
+              {partnerLogos.map((partner, i) => (
+                <div key={i} className="flex-shrink-0 h-12 md:h-14 lg:h-16">
+                  <img 
+                    src={partner.src} 
+                    alt={partner.alt} 
+                    className="h-full w-auto object-contain"
+                  />
+                </div>
+              ))}
             </div>
             
             {/* Footer Text */}
