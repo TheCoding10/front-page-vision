@@ -49,7 +49,7 @@ const teamMembers: TeamMember[] = [
     role: "Youth / Young Adults",
     blurb: "You, me, and an oat cappuccino sounds perfect",
     dataId: "lotus",
-    dotPosition: { top: "62%", left: "48%" },
+    dotPosition: { top: "55%", left: "53%" },
     nameBoxPosition: { top: "24%", left: "40%" },
     blurbPosition: { top: "72%", left: "36%" },
     lineToName: { height: "36%", direction: "up" },
