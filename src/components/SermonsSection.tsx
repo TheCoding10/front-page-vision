@@ -53,7 +53,7 @@ const SermonsSection = () => {
   return (
     <section className="pt-10 pb-20 bg-muted/30">
       <div className="container mx-auto px-6">
-        <h2 className="font-bold text-center text-foreground mb-16 mx-auto max-w-[1400px] px-6 md:whitespace-nowrap tracking-wide" style={{ fontFamily: "'LEMONMILK', sans-serif", fontSize: 'clamp(28px, 3.5vw, 56px)', letterSpacing: '1px' }}>
+        <h2 className="font-bold text-center text-foreground mb-16 mx-auto w-full px-6 tracking-wide text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl" style={{ fontFamily: "'LEMONMILK', sans-serif", letterSpacing: '1px', overflowWrap: 'anywhere', wordBreak: 'normal' }}>
           WALKING ALONGSIDE YOU IN THE PURSUIT OF HOLINESS
         </h2>
         
