@@ -13,7 +13,7 @@ const AboutUs = () => {
       <section className="container mx-auto px-6 md:px-12 py-20 md:py-24">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-10">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-10">
               <span className="font-normal">MEET</span>{" "}
               <span className="font-normal">OUR PASTORS</span>
             </h1>
