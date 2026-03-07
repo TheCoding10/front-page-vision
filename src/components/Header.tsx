@@ -31,7 +31,7 @@ const Header = ({ variant = "transparent" }: HeaderProps) => {
   return (
     <header className={`z-50 p-4 ${headerClasses}`}>
       <div className="container mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           <img 
             src={gvmLogo} 
             alt="Gods Voice Ministries Logo" 
@@ -41,7 +41,7 @@ const Header = ({ variant = "transparent" }: HeaderProps) => {
             <h1 className="text-sm font-bold tracking-tight leading-none">GODS VOICE</h1>
             <p className="text-sm font-bold tracking-tight leading-none">MINISTRIES</p>
           </div>
-        </div>
+        </Link>
         
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild>
